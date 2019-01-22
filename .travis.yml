@@ -25,7 +25,7 @@ after_success:
 
 
 deploy:
-  provider: "elasticbeanstalk"
+  provider: elasticbeanstalk
   region: "us-west-2"
   app: "docker-proact"
   env: "DockerProact-env"
