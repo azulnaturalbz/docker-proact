@@ -16,7 +16,7 @@ after_success:
   - docker build -t csilva/multi-worker ./worker
   # Log into the docker cli
 
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --p-stdin
 
   - docker push csilva/multi-client
   - docker push csilva/multi-nginx
