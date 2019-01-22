@@ -25,12 +25,12 @@ after_success:
 
 
 deploy:
-  provider: elasticbeanstalk
-  region: us-west-2
-  app: docker-proact
-  env: DockerProact-env
-  bucket_name: elasticbeanstalk-us-west-2-323216669271
-  bucket_path: docker-proact
+  provider: "elasticbeanstalk"
+  region: "us-west-2"
+  app: "docker-proact"
+  env: "DockerProact-env"
+  bucket_name: "elasticbeanstalk-us-west-2-323216669271"
+  bucket_path: "docker-proact"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_ID
