@@ -9,7 +9,7 @@ script:
   - docker run csilva/react-test npm test -- --coverage
 
 
-after_sucess:
+after_success:
   - docker build -t csilva/multi-client ./client
   - docker build -t csilva/multi-nginx ./nginx
   - docker build -t csilva/multi-server ./server
