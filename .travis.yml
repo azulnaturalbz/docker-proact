@@ -30,7 +30,7 @@ deploy:
   app: docker-proact
   env: DockerProact-env
   bucket_name: elasticbeanstalk-us-west-2-323216669271
-  bucker_path: docker-proact
+  bucket_path: docker-proact
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
