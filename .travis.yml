@@ -27,10 +27,10 @@ after_success:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: "docker-proact"
-  env: "DockerProact-env"
+  app: "multi-docker"
+  env: "MultiDocker-env"
   bucket_name: "elasticbeanstalk-us-west-2-323216669271"
-  bucket_path: "docker-proact"
+  bucket_path: "multi-docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_ID

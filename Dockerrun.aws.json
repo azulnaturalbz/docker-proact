@@ -6,21 +6,21 @@
 			"image": "devstbz/multi-client",
 			"hostname": "client",
 			"essential": false,
-			"memory": 128
+			"memory": 512
 		},
 		{
 			"name": "server",
 			"image": "devstbz/multi-server",
 			"hostname": "api",
 			"essential": false,
-			"memory": 128
+			"memory": 512
 		},
 		{
 			"name": "worker",
 			"image": "devstbz/multi-worker",
 			"hostname": "worker",
 			"essential": false,
-			"memory": 128
+			"memory": 512
 		},
 		{
 			"name": "nginx",
@@ -29,12 +29,12 @@
 			"essential": true,
 			"portMappings": [
 				{
-					"hostPort": 80, 
+					"hostPort": 80,
 					"containerPort": 80
 				}
 			],
 			"links": ["client", "server"],
-			"memory": 128
+			"memory": 512
 		}
 	]
 }
